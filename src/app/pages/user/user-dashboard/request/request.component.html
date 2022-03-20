@@ -1,0 +1,82 @@
+<div class="bootstrap-wrapper">
+
+    <div class="container">
+        <div class="row" style="margin-top: 10px;">
+
+            <div class="col-md-6 offset-md-3">
+                
+                <h1 class="text-center">Enter Required Information.. !!</h1>
+
+                <form (ngSubmit)="formSubmit()">
+                    <!-- Company Address -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Address</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+
+                    <!-- Working Capital -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Working_capital</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+                    
+                    <!-- Total Assests -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Total_Assests</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+                    
+                    <!-- Current Assests -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Current_Assests</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+                    
+                    <!-- Total_debt -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                    <mat-label>Total_debt</mat-label>
+                    <input matInput placeholder="Enter Here">
+                        </mat-form-field>
+                    
+                    <!-- Net_Profit -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Net_Profit(PBDIT)</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+                    
+                    <!-- Total_turnOver -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Total_turnover</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+                    
+                    <!-- Reserves -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Reserves</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+                    
+                    
+                    <!-- M.V. of Equity -->
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Market Value of Equity</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+                    
+                    
+                    <!-- Amount Required --> 
+                    <mat-form-field class="full-width" appearance="outline" >
+                        <mat-label>Amount Required</mat-label>
+                        <input matInput placeholder="Enter Here">
+                       </mat-form-field>
+
+                    <div class="container text-center" >
+                        <button type="submit" mat-raised-button color="primary">Predict</button>
+                        <button style="margin-left:20px" mat-raised-button color="Accent">Clear</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
