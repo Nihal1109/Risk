@@ -1,0 +1,44 @@
+<mat-card class="mt10 mr20 ml20" >
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">S.NO</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name </th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+           
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let q of  analyst">
+            <th scope="row">1</th>
+           
+            <td>{{q.firstName}}</td>
+            <td>{{q.lastName}}</td>
+            <td>{{q.username}}</td>
+            <td>{{q.useremail}}</td>
+            <td> <mat-card-actions>     <button
+                [routerLink]="'/admin/view-questions/'  + '/' "
+                mat-flat-button
+                color="accent"
+              >
+                Delete
+              </button></mat-card-actions></td>
+          </tr>
+      
+          
+        </tbody>
+      </table>
+      
+     
+  </mat-card>
+  
+  <div class="container text-center mt20">
+    <button routerLink="/admin/add-quiz" mat-raised-button color="accent">
+      Add New Analyst
+    </button>
+  </div>
+  

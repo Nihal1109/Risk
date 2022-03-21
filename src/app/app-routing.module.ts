@@ -11,6 +11,7 @@ import { AnalystGuard } from './services/analyst.guard';
 import { AdminGuard } from './services/admin.guard';
 import { UserGuard } from './services/user.guard';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ViewAnalystComponent } from './pages/admin/view-analyst/view-analyst.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,11 @@ const routes: Routes = [
       {
         path: 'profile',
         component: ProfileComponent,
+      },
+      {
+        path:'view-analyst',
+        component:ViewAnalystComponent
+
       }
     ]
 

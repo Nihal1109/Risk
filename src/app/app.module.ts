@@ -26,7 +26,10 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
 import { AnalystDashboardComponent } from './pages/analyst/analyst-dashboard/analyst-dashboard.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import {MatListModule} from '@angular/material/list';
+
 import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
+import {MatTableModule} from '@angular/material/table';
+import { ViewAnalystComponent } from './pages/admin/view-analyst/view-analyst.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,8 @@ import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
     UserDashboardComponent,
     AnalystDashboardComponent,
     ProfileComponent,
-    SidebarComponent
+    SidebarComponent,
+    ViewAnalystComponent
 
     ],
   imports: [
@@ -57,7 +61,9 @@ import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTableModule
+
   ],
   providers: [AuthInterceptorProviders],
   bootstrap: [AppComponent]
